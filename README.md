@@ -2,7 +2,6 @@
 
 **Author:** Oliver Abinader
 
----
 
 ## Overview
 
@@ -10,7 +9,6 @@ This repository provides a workflow to compute **pathway activity scores** from 
 
 Unlike differential expression analysis (gene-level), this approach summarizes expression into **biologically meaningful pathways**, enabling comparison of pathway activity across individual samples.
 
----
 
 ## Method Summary
 
@@ -25,7 +23,6 @@ Unlike differential expression analysis (gene-level), this approach summarizes e
   * Heatmap visualization
   * Excel export
 
----
 
 ## Repository Structure
 
@@ -45,7 +42,6 @@ rnaseq-ssgsea-pathway-analysis/
 └── README.md
 ```
 
----
 
 ## 📥 Input Files
 
@@ -67,7 +63,6 @@ rnaseq-ssgsea-pathway-analysis/
   * `condition1` (e.g., group)
   * `condition2` (e.g., model/type)
 
----
 
 ## Workflow
 
@@ -80,16 +75,12 @@ rnaseq-ssgsea-pathway-analysis/
   log(TPM + 1)
   ```
 
----
-
 ### 2. Gene Set Retrieval
 
 * Hallmark gene sets obtained using:
 
   * `msigdbr`
 * Species: *Mus musculus*
-
----
 
 ### 3. ssGSEA Scoring
 
@@ -103,15 +94,11 @@ rnaseq-ssgsea-pathway-analysis/
   GSVA::gsva()
   ```
 
----
-
 ### 4. Scaling
 
 * Z-score normalization per pathway:
 
   * highlights relative activation across samples
-
----
 
 ### 5. Visualization
 
@@ -120,8 +107,7 @@ rnaseq-ssgsea-pathway-analysis/
 
   * Group
   * Model
-
----
+    
 
 ## 📊 Outputs
 
@@ -130,14 +116,12 @@ rnaseq-ssgsea-pathway-analysis/
 | `Hallmark_ssGSEA.png`    | Heatmap of pathway activity  |
 | `Hallmark_ssGSEA.xlsx`   | Raw and scaled ssGSEA scores |
 
----
 
 ## Interpretation
 
 * Positive values → higher pathway activity
 * Negative values → lower pathway activity
 
----
 
 ## ⚠️ Notes
 
@@ -149,7 +133,6 @@ rnaseq-ssgsea-pathway-analysis/
   * gene set selection
   * data quality
 
----
 
 ## Dependencies
 
@@ -160,7 +143,6 @@ rnaseq-ssgsea-pathway-analysis/
 * `pheatmap`
 * `openxlsx`
 
----
 
 ## 🧾 Citation
 
@@ -169,8 +151,7 @@ If you use this workflow, please cite:
 * Hänzelmann et al., 2013 (GSVA method)
 * MSigDB Hallmark gene sets
 
----
 
 ## Summary
 
-> This workflow transforms gene expression data into pathway-level activity scores, enabling biologically interpretable comparisons across samples.
+This workflow transforms gene expression data into pathway-level activity scores, enabling biologically interpretable comparisons across samples.
