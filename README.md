@@ -1,4 +1,4 @@
-# 🧬 RNA-seq Pathway Activity Analysis using ssGSEA
+# RNA-seq Pathway Activity Analysis using ssGSEA
 
 **Author:** Oliver Abinader
 
@@ -33,7 +33,7 @@ rnaseq-ssgsea-pathway-analysis/
 │   └── hallmark_ssgsea_analysis.Rmd
 │
 ├── data/
-│   └── metadata.tsv
+│   └── metadata_example.tsv
 │
 ├── results/
 │   ├── Hallmark_ssGSEA.png
@@ -56,7 +56,7 @@ rnaseq-ssgsea-pathway-analysis/
 
 ### 2. Metadata File
 
-* File: `metadata.tsv`
+* File: `metadata_example.tsv`
 * Required columns:
 
   * `sample`
