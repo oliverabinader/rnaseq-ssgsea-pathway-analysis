@@ -1,0 +1,9 @@
+sample	condition1	condition2
+Sample_01	WT	Cell_line
+Sample_02	WT	Cell_line
+Sample_03	Null	Cell_line
+Sample_04	Null	Cell_line
+Sample_05	WT	Tumor
+Sample_06	WT	Tumor
+Sample_07	Null	Tumor
+Sample_08	Null	Tumor
